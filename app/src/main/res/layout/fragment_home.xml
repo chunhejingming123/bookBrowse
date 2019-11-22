@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dimen_20"
+        android:paddingBottom="@dimen/dimen_10">
+
+        <FrameLayout
+            android:id="@+id/flSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_18"
+            android:layout_weight="1.0"
+            android:background="@drawable/shape_gray_round"
+            android:paddingLeft="@dimen/dimen_12">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_30"
+                android:gravity="center_vertical"
+                android:text="请输入书籍名称或作者名字"
+                android:textColor="@color/color_ffccc9c5"
+                android:textSize="@dimen/dimen_14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_home_search" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/ivMsg"
+            android:layout_width="@dimen/dimen_30"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_18"
+            android:background="@drawable/ic_home_msg" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never" />
+
+
+</LinearLayout>

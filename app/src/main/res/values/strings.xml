@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">沙鱼亲子</string>
+    <string name="find">发现</string>
+    <string name="bookbrowse">借书</string>
+    <string name="mine">我的</string>
+    <string name="login">登陆</string>
+    <string name="inputtel">请输入手机号</string>
+    <string name="inputcode">输入验证码</string>
+    <string name="sendcode">发送验证码</string>
+    <string name="querylogin">确认登陆</string>
+    <string name="loginphone">手机登陆</string>
+    <string name="loginwx">微信登陆</string>
+    <string name="loginemplee">员工登陆</string>
+    <string name="jingxuan">精选</string>
+    <string name="prebook">我要借阅</string>
+    <string name="backbookto">借书请扫描，还书把书交给工作人员</string>
+    <string name="huiyuantype">会员类别</string>
+    <string name="huiyuandate">会员期限</string>
+    <string name="readhis">借阅历史</string>
+    <string name="msgnotice">消息提醒</string>
+    <string name="invitedfr">邀请好友</string>
+    <string name="bookinro">黄帝传说 选自《五帝本纪第一》 黄帝，姓公孙，名轩辕。黄帝从小就表现出了灵性。他学东西很快，出生后不久就会说话。黄帝小时候既聪敏又勤奋，后来他成为了一个见多识广、明辨是非的人。 轩辕成长的时期，神农氏① 的后代族人因为统治不当，已经失去了各个地方诸侯的支持。那时候，各部落之间常常发生战争，神农氏没有能力召集军事力量征讨诸侯的战乱，而轩辕却能凭借自己的声威去讨伐他们，因此很多诸侯都归顺了他。轩辕施行仁政，以德治民。他的臣民顺应自然气象耕种五谷，百姓安居乐业。轩辕整顿军旅，训练百姓作战的方法。民众中有以熊、罴②、貔貅③ 、貙④ 、虎为图腾的氏族，轩辕教他们习武。等部落壮大后，轩辕带领族人在阪泉的郊野攻打炎帝并取得了胜利。之后，他又擒杀了当时最残暴的部落首领蚩尤。从此以后，轩辕取代神农氏，成为新的帝王。</string>
+    <string name="bookjie">立即借阅</string>
+    <string name="xufei">确认续费</string>
+    <string name="vipxufei">会员续费</string>
+    <string name="select">选择</string>
+    <string name="exite">退出</string>
+    <string name="vipopen">请先开通会员</string>
+    <string name="open">开通</string>
+    <string name="opencomfir">确认开通</string>
+    <string name="openviptip">确定开通%1$s个人会员</string>
+    <string name="vipsucess">个人会员充值成功</string>
+    <string name="addwx">添加微信了解更多</string>
+    <string name="booksucess">借书成功，记得准时归还</string>
+    <string name="iknown">我知道了</string>
+    <string name="bookfailer">您还有1本书没有归还\n 请归还后再来借书</string>
+</resources>

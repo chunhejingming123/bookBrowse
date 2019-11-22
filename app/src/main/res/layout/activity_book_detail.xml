@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimen_56"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_210">
+
+                <ImageView
+                    android:id="@+id/ivCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/bookdetalbg"
+                    android:scaleType="centerCrop" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:paddingLeft="@dimen/dimen_12"
+                android:text="史记 青少版插图本"
+                android:textColor="@color/color_ff3a3636"
+                android:textSize="@dimen/dimen_15" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:paddingLeft="@dimen/dimen_12"
+                android:paddingRight="@dimen/dimen_12">
+
+                <TextView
+                    android:id="@+id/bookAuther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="司马迁"
+                    android:textColor="@color/color_ff868484"
+                    android:textSize="@dimen/dimen_14" />
+
+                <TextView
+                    android:id="@+id/bookPublish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_toRightOf="@+id/bookAuther"
+                    android:text="民主与建设出版社"
+                    android:textColor="@color/color_ff868484"
+                    android:textSize="@dimen/dimen_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="2017年08月出版 "
+
+                    android:textColor="@color/color_ff868484"
+                    android:textSize="@dimen/dimen_14" />
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:layout_marginBottom="@dimen/dimen_18"
+                android:paddingLeft="@dimen/dimen_12"
+                android:paddingRight="@dimen/dimen_12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="库存剩余：0本"
+                    android:textColor="@color/color_ff868484"
+                    android:textSize="@dimen/dimen_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:text="可借时长：1-3个月"
+                    android:textColor="@color/color_ff868484"
+                    android:textSize="@dimen/dimen_14" />
+            </FrameLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_7"
+                android:background="@color/gray4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:drawableLeft="@drawable/shape_blue_flag"
+                android:drawablePadding="@dimen/dimen_5"
+                android:paddingLeft="@dimen/dimen_12"
+                android:text="书籍位置"
+                android:textColor="@color/color_ff868484"
+                android:textSize="@dimen/dimen_14" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:layout_marginBottom="@dimen/dimen_18"
+                android:paddingLeft="@dimen/dimen_12">
+
+                <TextView
+                    android:id="@+id/bookSite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="三层文史类"
+                    android:textColor="@color/color_ff868484"
+                    android:textSize="@dimen/dimen_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_toRightOf="@+id/bookSite"
+                    android:text="K360-49/A100"
+
+                    android:textColor="@color/color_ff868484"
+                    android:textSize="@dimen/dimen_12" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_7"
+                android:background="@color/gray4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:drawableLeft="@drawable/shape_blue_flag"
+                android:drawablePadding="@dimen/dimen_5"
+                android:paddingLeft="@dimen/dimen_12"
+                android:text="书籍简介"
+                android:textColor="@color/color_ff868484"
+                android:textSize="@dimen/dimen_14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineHeight="@dimen/dimen_18"
+                android:padding="@dimen/dimen_12"
+                android:text="@string/bookinro"
+                android:textColor="@color/color_ff868484"
+                android:textSize="@dimen/dimen_12" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/include_title" />
+
+    <TextView
+        android:id="@+id/tvRead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/dimen_12"
+        android:background="@drawable/shape_blue_flag"
+        android:gravity="center"
+        android:padding="@dimen/dimen_12"
+        android:text="@string/bookjie"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_16" />
+</FrameLayout>

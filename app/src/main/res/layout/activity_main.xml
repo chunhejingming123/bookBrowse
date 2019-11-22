@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dimen_50" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@mipmap/barbg"
+        android:elevation="@dimen/dimen_8">
+
+        <com.wenli.framework.bottomnavigation.BottomNavigationBar
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom" />
+
+        <ImageView
+            android:layout_width="@dimen/dimen_43"
+            android:layout_height="@dimen/dimen_43"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:background="@mipmap/ic_bookpre"
+            android:elevation="@dimen/dimen_8"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+
+
+</FrameLayout>

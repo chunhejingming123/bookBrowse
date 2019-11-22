@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_230"
+        android:background="@mipmap/uerbg"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dimen_30">
+
+        <com.wenli.framework.view.CircleImageView
+            android:layout_width="@dimen/dimen_70"
+            android:layout_height="@dimen/dimen_70"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_35"
+            android:background="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:gravity="center"
+            android:text="泡泡公子"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal|bottom"
+            android:paddingBottom="@dimen/dimen_20"
+            android:text="@string/backbookto"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_14" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl01"
+        style="@style/item_parent">
+
+        <ImageView
+            android:id="@+id/ivIcon1"
+            style="@style/item_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_user_type" />
+
+        <TextView
+            style="@style/item_text"
+            android:layout_toRightOf="@+id/ivIcon1"
+            android:text="@string/huiyuantype" />
+
+        <View
+            style="@style/line_858585"
+            android:layout_alignParentBottom="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="个人会员"
+            android:textColor="@color/color_ffa4a4a4"
+            android:textSize="@dimen/dimen_14" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl02"
+        style="@style/item_parent">
+
+        <ImageView
+            android:id="@+id/ivIcon2"
+            style="@style/item_icon"
+            android:background="@mipmap/ic_huiyuan" />
+
+        <TextView
+            style="@style/item_text"
+            android:layout_toRightOf="@+id/ivIcon2"
+            android:text="@string/huiyuandate" />
+
+        <View
+            style="@style/line_858585"
+            android:layout_alignParentBottom="true" />
+
+        <ImageView
+            android:id="@+id/iv2"
+            style="@style/item_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_toLeftOf="@+id/iv2"
+            android:text="2019.04.21-2020.04.21"
+            android:textColor="@color/color_ffa4a4a4"
+            android:textSize="@dimen/dimen_14" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl03"
+        style="@style/item_parent">
+
+        <ImageView
+            android:id="@+id/ivIcon3"
+            style="@style/item_icon"
+            android:background="@mipmap/ic_zuji" />
+
+        <TextView
+            style="@style/item_text"
+            android:layout_toRightOf="@+id/ivIcon3"
+            android:text="@string/readhis" />
+
+        <View
+            style="@style/line_858585"
+            android:layout_alignParentBottom="true" />
+
+        <ImageView
+            android:id="@+id/iv3"
+            style="@style/item_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_toLeftOf="@+id/iv3"
+            android:text="1本"
+            android:textColor="@color/color_ffa4a4a4"
+            android:textSize="@dimen/dimen_14" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl04"
+        style="@style/item_parent">
+
+        <ImageView
+            android:id="@+id/ivIcon4"
+            style="@style/item_icon"
+            android:background="@mipmap/ic_msg_notice" />
+
+        <TextView
+            style="@style/item_text"
+            android:layout_toRightOf="@+id/ivIcon4"
+            android:text="@string/msgnotice" />
+
+        <View
+            style="@style/line_858585"
+            android:layout_alignParentBottom="true" />
+
+        <ImageView
+            android:id="@+id/iv4"
+            style="@style/item_arrow" />
+
+        <TextView
+            android:layout_width="@dimen/dimen_6"
+            android:layout_height="@dimen/dimen_6"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_toLeftOf="@+id/iv4"
+            android:background="@drawable/shape_red_dot" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl05"
+        style="@style/item_parent">
+
+        <ImageView
+            android:id="@+id/ivIcon5"
+            style="@style/item_icon"
+            android:background="@mipmap/ic_invited" />
+
+        <TextView
+            style="@style/item_text"
+            android:layout_toRightOf="@+id/ivIcon5"
+            android:text="@string/invitedfr" />
+
+        <View
+            style="@style/line_858585"
+            android:layout_alignParentBottom="true" />
+
+        <ImageView
+            android:id="@+id/iv5"
+            style="@style/item_arrow" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvExte"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dimen_30"
+        android:background="@drawable/shape_normal_vip"
+        android:gravity="center"
+        android:text="@string/exite"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_16" />
+
+</LinearLayout>

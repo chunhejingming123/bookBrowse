@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.wenli.framework.view.GradientShaderTextView
+        android:id="@+id/tvloading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:lineSpacingMultiplier="0.8"
+        android:padding="@dimen/dimen_15"
+        android:text="阳泉泽平"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_36"
+        android:textStyle="bold|italic" />
+</FrameLayout>

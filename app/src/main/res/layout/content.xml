@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector_background"
+    android:paddingTop="@dimen/dimen_8">
+
+    <FrameLayout
+        android:id="@+id/flCover"
+        android:layout_width="@dimen/dimen_92"
+        android:layout_height="@dimen/dimen_92"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:layout_marginBottom="@dimen/dimen_15"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/ivCover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_margin="@dimen/dimen_2"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_12"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_toRightOf="@+id/flCover"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvBookName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:maxLines="1"
+                android:text="史记 青少版插图本"
+                android:textColor="@color/color_ff3a3636"
+                android:textSize="@dimen/dimen_15" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:background="@drawable/shape_red1_round"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_6"
+                android:paddingTop="@dimen/dimen_2"
+                android:paddingRight="@dimen/dimen_6"
+                android:paddingBottom="@dimen/dimen_2"
+                android:text="@string/jingxuan"
+                android:textColor="@color/color_fff20d2e"
+                android:textSize="@dimen/dimen_10" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvBookAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="麦家"
+                android:textColor="@color/color_868484"
+                android:textSize="@dimen/dimen_14" />
+
+            <TextView
+                android:id="@+id/tvBookPublish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:maxLines="1"
+                android:text="北京十月文艺出版社"
+                android:textColor="@color/color_868484"
+                android:textSize="@dimen/dimen_14" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvBookintro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="黄帝，姓公孙，名轩辕。黄帝从小就表现……"
+            android:textColor="@color/color_868484"
+            android:textSize="@dimen/dimen_12" />
+
+        <TextView
+            android:id="@+id/tvJie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:background="@drawable/shape_blue_round6"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dimen_8"
+            android:paddingTop="@dimen/dimen_3"
+            android:paddingRight="@dimen/dimen_8"
+            android:paddingBottom="@dimen/dimen_3"
+            android:text="@string/prebook"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_12" />
+
+
+    </LinearLayout>
+
+    <View
+        style="@style/line_ffcccccc"
+        android:layout_below="@+id/flCover"
+        android:layout_marginTop="@dimen/dimen_8" />
+
+</RelativeLayout>

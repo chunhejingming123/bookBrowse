@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlroot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dimen_6"
+    android:layout_marginTop="@dimen/dimen_20"
+    android:layout_marginRight="@dimen/dimen_12"
+    android:background="@drawable/shape_vip_select">
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:text="续一年"
+        android:textColor="@color/color_BFA26F"
+        android:textSize="@dimen/dimen_15" />
+
+    <ImageView
+        android:layout_width="@dimen/dimen_22"
+        android:layout_height="@dimen/dimen_22"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_24"
+        android:background="@drawable/ic_click_select" />
+
+    <TextView
+        android:id="@+id/tvMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTime"
+        android:layout_marginLeft="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:text="158元"
+        android:textColor="@color/color_FFF6DFA7"
+        android:textSize="@dimen/dimen_20" />
+
+    <Button
+        android:id="@+id/btnChose"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_24"
+        android:layout_below="@+id/tvMoney"
+        android:layout_marginLeft="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_36"
+        android:layout_marginRight="@dimen/dimen_24"
+        android:layout_marginBottom="@dimen/dimen_25"
+        android:background="@drawable/shape_select_vip"
+        android:gravity="center"
+        android:text="@string/select"
+        android:textColor="@color/color_FF232222"
+        android:textSize="@dimen/dimen_12" />
+</RelativeLayout>

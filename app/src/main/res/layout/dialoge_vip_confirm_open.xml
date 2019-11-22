@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@color/red"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_210"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:background="@drawable/shape_white_round6">
+
+        <TextView
+            android:id="@+id/tvConfirmTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_130"
+            android:text="@string/vipopen"
+            android:textColor="#ff1f1d1d"
+            android:textSize="@dimen/dimen_18" />
+
+        <Button
+            android:id="@+id/btnOpen"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_44"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/dimen_50"
+            android:layout_marginTop="@dimen/dimen_170"
+            android:layout_marginRight="@dimen/dimen_50"
+            android:layout_marginBottom="@dimen/dimen_30"
+            android:background="@drawable/shape_login_select"
+            android:gravity="center"
+            android:text="@string/opencomfir"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_15" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_140"
+        android:background="@mipmap/vipconfirmbg" />
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_500"
+        android:background="@mipmap/close" />
+
+
+</FrameLayout>

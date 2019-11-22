@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_210"
+        android:background="@mipmap/bg_dialoge">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_120"
+            android:text="登录后方可使用"
+            android:textColor="#ff1f1d1d"
+            android:textSize="@dimen/dimen_18" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_170"
+            android:layout_marginBottom="@dimen/dimen_30"
+            android:background="@drawable/shape_login_select"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen_80"
+            android:paddingRight="@dimen/dimen_80"
+            android:text="@string/querylogin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_15" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_150"
+        android:background="@mipmap/bg_login" />
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_500"
+        android:background="@mipmap/close" />
+
+
+</FrameLayout>
