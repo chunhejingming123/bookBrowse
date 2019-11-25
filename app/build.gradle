@@ -80,6 +80,10 @@ android {
             jniLibs.srcDirs = ['libs']
         }
     }
+    dexOptions {
+        preDexLibraries = false
+        javaMaxHeapSize "4g"
+    }
 }
 
 dependencies {
@@ -93,12 +97,16 @@ dependencies {
     implementation project(path: ':framework')
     implementation project(path: ':zxlibing')
     implementation 'com.squareup.okhttp3:okhttp:3.7.0'
-    implementation 'com.github.bumptech.glide:glide:3.7.0'
+
     implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
     implementation 'io.reactivex.rxjava2:rxjava:2.0.7'
-    implementation 'com.youth.banner:banner:1.4.10'
-    //最新版本
-    implementation 'com.github.bumptech.glide:glide:3.7.0'
+
+
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    annotationProcessor 'androidx.annotation:annotation:1.1.0'
+
+
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'

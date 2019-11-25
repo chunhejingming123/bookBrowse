@@ -3,17 +3,22 @@ package com.wenli.bookbrowse
 import android.Manifest
 import android.content.pm.PackageManager
 import android.os.Handler
+import android.text.TextUtils
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.FragmentTransaction
+import com.wenli.bookbrowse.base.MyApplication
+import com.wenli.bookbrowse.bean.User
 import com.wenli.bookbrowse.fragment.HomeFragment
 import com.wenli.bookbrowse.fragment.LoginFragment
-import com.wenli.bookbrowse.fragment.ZxingFragment
 import com.wenli.bookbrowse.fragment.UserFragment
+import com.wenli.bookbrowse.fragment.ZxingFragment
+import com.wenli.bookbrowse.modelImp.LoginModelImpl
 import com.wenli.framework.base.BaseActivity
 import com.wenli.framework.base.BaseApplication
 import com.wenli.framework.bottomnavigation.BottomNavigationBar
 import com.wenli.framework.bottomnavigation.BottomNavigationItem
+import com.wenli.framework.mvp.OnCallBackListener
 import com.wenli.framework.util.ParmarsValue
 import com.wenli.framework.util.PermissionsUtils
 import com.wenli.framework.util.ScreenUtil
@@ -49,11 +54,29 @@ class HomeActivity : BaseActivity(), BottomNavigationBar.OnTabSelectedListener {
                 ?.initialise()
         bottomBar?.setTabSelectedListener(this)
         initFragment(selectIndex)
+        getUserinfo()
 
     }
 
+    private fun getUserinfo() {
+        var token = intent.extras?.getString("assToken")
+        var openId = intent.extras?.getString("openId")
+        if (TextUtils.isEmpty(token)) {
+            return
+        }
+        LoginModelImpl.getUserConfig(token, openId, object : OnCallBackListener<User> {
+            override fun onSucess(mUser: User?) {
+                SharedPreferencesHelper.getInstance(this@HomeActivity).put(ParmarsValue.KEY_lOGIN, true)
+                MyApplication.setUser(mUser)
+            }
+
+            override fun onFailed(e: String?) {
+
+            }
+        })
+    }
+
     private fun initFragment(currentIndex: Int) {
-        var isLogin = SharedPreferencesHelper.getInstance(this).getSharedPreference(ParmarsValue.KEY_lOGIN, false) as Boolean
         var fragmentTransaction = supportFragmentManager.beginTransaction()
         hidtFragment(fragmentTransaction)
         selectIndex = currentIndex
@@ -85,21 +108,6 @@ class HomeActivity : BaseActivity(), BottomNavigationBar.OnTabSelectedListener {
                     fragmentTransaction.show(userFragment!!)
                 }
 
-//                if (isLogin) {
-//                    if (null == userFragment) {
-//                        userFragment = UserFragment()
-//                        fragmentTransaction.add(R.id.container, userFragment!!)
-//                    } else {
-//                        fragmentTransaction.show(userFragment!!)
-//                    }
-//                } else {
-//                    if (null == loginFragment) {
-//                        loginFragment = LoginFragment()
-//                        fragmentTransaction.add(R.id.container, loginFragment!!)
-//                    } else {
-//                        fragmentTransaction.show(loginFragment!!)
-//                    }
-//                }
 
             }
 

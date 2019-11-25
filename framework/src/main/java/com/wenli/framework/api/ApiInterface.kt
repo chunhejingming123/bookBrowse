@@ -12,6 +12,7 @@ import com.wenli.framework.http.UriConsts
 class ApiInterface {
     companion object {
         val wxAppid="wx38b5d7ad60218dd5"
+        val  wxSecret="901dac87827945f7e3791bb392cb8d6c"
 
         fun getRequestUrl(url: String): String {
             var buff = StringBuffer(UriConsts.BASE_URL)

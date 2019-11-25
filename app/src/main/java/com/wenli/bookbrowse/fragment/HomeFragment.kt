@@ -8,12 +8,16 @@ import com.wenli.bookbrowse.R
 import com.wenli.bookbrowse.adapter.HomeAdapter
 import com.wenli.bookbrowse.bean.Book
 import com.wenli.bookbrowse.home.BookDetailActivity
+import com.wenli.bookbrowse.home.SearchActivity
+import com.wenli.bookbrowse.user.MesNoticeActivity
 import com.wenli.framework.base.BaseFragment
 import com.wenli.framework.util.ToastUtil
 
 class HomeFragment : BaseFragment() {
     var mRecycleView: RecyclerView? = null
     var homeAdapter: HomeAdapter? = null
+    var msg: View? = null
+    var flsearch:View?=null
     override fun onInflater(inflater: LayoutInflater, container: ViewGroup?): View {
         rootView = inflater.inflate(R.layout.fragment_home, container, false)
         return rootView!!
@@ -21,6 +25,10 @@ class HomeFragment : BaseFragment() {
 
     override fun findView() {
         mRecycleView = rootView?.findViewById(R.id.recycleView)
+        msg = rootView?.findViewById(R.id.ivMsg)
+        flsearch=rootView?.findViewById(R.id.flSearch)
+        msg?.setOnClickListener { startActivity(MesNoticeActivity::class.java, null) }
+        flsearch?.setOnClickListener { startActivity(SearchActivity::class.java,null) }
         rendView()
     }
 

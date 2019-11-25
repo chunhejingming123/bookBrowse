@@ -41,16 +41,15 @@ public class LoginActivity extends MvpBaseActivity<LoginContract.ILoginView, Log
         switch (view.getId()) {
             case R.id.btnLogin:
                 startActivity(HomeActivity.class, null);
-                SharedPreferencesHelper.getInstance(this).put(ParmarsValue.KEY_lOGIN, true);
                 break;
             case R.id.llwx:
-
                 mPresenter.loginWx();
                 break;
         }
     }
 
     IWXAPI mWxApi;
+
     private void registerToWX() {
         //第二个参数是指你应用在微信开放平台上的AppID
         mWxApi = WXAPIFactory.createWXAPI(this, ApiInterface.Companion.getWxAppid(), false);
@@ -60,11 +59,13 @@ public class LoginActivity extends MvpBaseActivity<LoginContract.ILoginView, Log
 
     @Override
     public void showToastLogin(String msg) {
+
         SendAuth.Req req = new SendAuth.Req();
         req.scope = "snsapi_userinfo";
         req.state = "diandi_wx_login";
         //像微信发送请求
         mWxApi.sendReq(req);
+        finish();
 
     }
 

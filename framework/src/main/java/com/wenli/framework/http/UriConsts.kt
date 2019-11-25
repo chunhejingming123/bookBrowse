@@ -7,11 +7,11 @@ package com.wenli.framework.http
 
 class UriConsts {
     companion object {
-        val isDebug = false
-        //阳泉立充
-        val APPID = "wx34f6ec0118fd55e7"
-      //  val BASE_URL = "http://47.92.164.126/wuxianchong/"
-       val BASE_URL = "http://101.201.73.118/wuxianchong/"
+        val isDebug = true
+
+        //  val BASE_URL = "http://47.92.164.126/wuxianchong/"
+        val BASE_URL = ""
+        val OTHER_URL = "https://api.weixin.qq.com/"
     }
 
 }

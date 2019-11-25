@@ -23,6 +23,7 @@ class HttpUtil private constructor() {
     }
 
     private val mApiService: ApiService = Api.default
+    private val mOtherSerivce: ApiService = Api.OtherService
 
     fun postRequest(url: String, map: Map<String, String>, mHttpRespnse: HttpRespnse) {
         var observer = mApiService.postGetObservable(url, map)
@@ -53,8 +54,9 @@ class HttpUtil private constructor() {
 
     }
 
-    fun postRequestNoRes(url: String, map: Map<String, String>, mHttpRespnse: HttpRespnse) {
-        var observer = mApiService.postGetObservable(url, map)
+
+    fun getRequest(url: String, map: Map<String, String>, mHttpRespnse: HttpRespnse) {
+        var observer = mApiService.getObservable(url, map)
         observer.subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(object : Observer<ResponseBody> {
@@ -66,14 +68,10 @@ class HttpUtil private constructor() {
 
                     override fun onNext(t: ResponseBody) {
                         try {
-
                             mHttpRespnse._onSucess(t.string())
-
                         } catch (t: Throwable) {
                             LogUtil.e("---throw:" + t.localizedMessage)
                         }
-
-
                     }
 
                     override fun onError(e: Throwable) {
@@ -84,8 +82,9 @@ class HttpUtil private constructor() {
 
     }
 
-    fun getRequest(url: String, map: Map<String, String>, mHttpRespnse: HttpRespnse) {
-        var observer = mApiService.getObservable(url, map)
+
+    fun getOtherRequest(url: String, map: Map<String, String>, mHttpRespnse: HttpRespnse) {
+        var observer = mOtherSerivce.getObservable(url, map)
         observer.subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(object : Observer<ResponseBody> {

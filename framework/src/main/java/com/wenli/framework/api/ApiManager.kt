@@ -43,6 +43,15 @@ class ApiManager private constructor() {
         HttpUtil.instance.getRequest(url, map, mHttpResponse)
     }
 
+    fun getDataByOtherParmars(url: String, map: Map<String, String>, mHttpResponse: HttpRespnse) {
+        var iscont = NetworkUtil.isOpenNetwork(BaseApplication.application, false)
+        if (!iscont) {
+            ToastUtil.showAlter("请检查网络")
+            return
+        }
+        HttpUtil.instance.getOtherRequest(url, map, mHttpResponse)
+    }
+
 
     fun getDataByUrl(url: String, mHttpResponse: HttpRespnse) {
         var iscont = NetworkUtil.isOpenNetwork(BaseApplication.application, false)

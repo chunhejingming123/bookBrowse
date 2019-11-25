@@ -3,7 +3,6 @@ package com.wenli.bookbrowse.presenter;
 import com.wenli.bookbrowse.contract.LoginContract;
 import com.wenli.bookbrowse.modelImp.LoginModelImpl;
 import com.wenli.framework.mvp.OnCallBackListener;
-import com.wenli.framework.util.ToastUtil;
 
 import java.util.Map;
 

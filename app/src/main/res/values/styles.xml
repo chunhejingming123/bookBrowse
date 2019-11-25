@@ -45,6 +45,10 @@
         <item name="android:src">@drawable/arrow_right</item>
     </style>
 
+    <style name="NoTranslucent" parent="@style/AppTheme">
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
 
 
 </resources>

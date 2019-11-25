@@ -13,42 +13,56 @@
         android:paddingTop="@dimen/dimen_20"
         android:paddingBottom="@dimen/dimen_10">
 
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/dimen_30"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:src="@drawable/ic_arrow_left" />
+
         <FrameLayout
             android:id="@+id/flSearch"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/dimen_40"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="@dimen/dimen_18"
+            android:layout_marginLeft="@dimen/dimen_10"
             android:layout_weight="1.0"
             android:background="@drawable/shape_gray_round"
             android:paddingLeft="@dimen/dimen_12">
 
-            <TextView
+            <EditText
+                android:id="@+id/etSearch"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="@dimen/dimen_30"
-                android:maxLines="1"
-                android:gravity="center_vertical"
-                android:text="请输入书籍名称或作者名字"
-                android:textColor="@color/color_ffccc9c5"
-                android:textSize="@dimen/dimen_14" />
-
-            <ImageView
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:background="@drawable/ic_home_search" />
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_30"
+                android:background="#fff2f3f7"
+                android:gravity="center_vertical|left"
+                android:hint="请输入书籍名称或作者名字"
+                android:maxLines="1"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:textColorHint="@color/color_ffccc9c5"
+                android:textColor="@color/color_ffa4a4a4"
+                android:textSize="@dimen/dimen_14" />
+
+
         </FrameLayout>
 
-        <ImageView
-            android:id="@+id/ivMsg"
-            android:layout_width="@dimen/dimen_30"
+        <TextView
+            android:id="@+id/tvfind"
+            android:layout_width="@dimen/dimen_60"
             android:layout_height="@dimen/dimen_30"
             android:layout_gravity="center"
             android:layout_marginLeft="@dimen/dimen_10"
-            android:layout_marginRight="@dimen/dimen_18"
-            android:background="@drawable/ic_home_msg" />
+            android:layout_marginRight="@dimen/dimen_15"
+            android:background="@drawable/shape_login_select"
+            android:gravity="center"
+            android:text="@string/search"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_14" />
 
     </LinearLayout>
 

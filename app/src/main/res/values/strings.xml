@@ -34,4 +34,5 @@
     <string name="booksucess">借书成功，记得准时归还</string>
     <string name="iknown">我知道了</string>
     <string name="bookfailer">您还有1本书没有归还\n 请归还后再来借书</string>
+    <string name="search">查找</string>
 </resources>

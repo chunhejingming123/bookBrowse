@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -14,7 +15,7 @@ import com.wenli.framework.util.GreenActivityManager
 import com.wenli.framework.view.MyLinearLayoutManager
 
 
-abstract class BaseActivity : AppCompatActivity(), InitView {
+abstract class BaseActivity : FragmentActivity(), InitView {
     override fun init() {
 
     }
